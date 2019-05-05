@@ -1,0 +1,485 @@
+/*Reset CSS start */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Reset CSS END*/
+
+/*Helper Classes*/
+
+b, 
+strong{
+	font-weight: 700;
+}
+
+em,
+i{
+	font-style: italic;
+}
+
+p{
+	font-size: 1rem;
+	margin-bottom: 1.25rem;
+	line-height: 1.45rem;
+}
+
+.align-left{
+	float: left;
+}
+
+.align-right{
+	float: right;
+}
+
+
+/*Helper classes end*/
+
+
+/*  General Rules  */
+
+@font-face{
+	font-family: 'HelveticaNeue-Thin';
+	src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+	max-width: 68.75rem;
+	width: 100%;
+	/*border: 2px solid black;*/
+	margin: 0 auto;
+	padding: 2.5rem 1.25rem;
+	overflow: hidden;
+	position: relative;
+}
+
+#hero{
+	background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('../img/hero-bg.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+h2{
+	font-size: 3.25rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.nav li{
+	display: inline-block;
+}
+
+.nav li a{
+	color: white;
+	text-decoration: none;
+	margin-left: 1.9rem;
+	border-bottom: .25rem solid white transparent;
+	transition: border-bottom 0.1s, color 0.1s;
+	padding-bottom: .2rem;
+}
+
+.nav li a:hover{
+	border-bottom: .25rem solid white;	
+	transition: border-bottom 0.1s, color 0.1s;
+}
+
+#hero h2{
+	color:  white;
+	margin-bottom: 2.5rem;
+}
+
+.cta{
+	display: inline-block;
+	margin-top: 5.625rem;
+	position: relative;
+}
+
+.imgs{
+	float: right;
+	position: absolute;
+	right: -8.4375rem;
+}
+
+/*.iphone{
+	width: 85%;
+	position: relative;
+	margin-bottom: -15rem;
+} */
+
+.cta-info{
+	width: 60%;
+	padding-right: 9.375rem;
+	/*overflow: hidden;*/
+	/*float: left;*/
+}
+
+.hero-para{
+	font-size: 2.25rem;
+	font-family: 'HelveticaNeue-Thin';
+	color: white;
+	line-height: 2.5rem;
+	margin-bottom: 3.375rem;
+}
+
+.cta-button{
+	padding: 1.4375rem 2.1875rem;
+	text-decoration: none;
+	color: white;
+	background-color: #282828;
+	border-radius: 3.125rem;
+	transition: 0.5s;
+}
+
+.cta-button:hover{
+	background: #383737;
+	transition: 0.3s;
+}
+
+.phone-icon{
+	vertical-align: middle;       
+	padding-right: 1.25rem;
+}
+
+/*App Features*/
+
+#app-features .container{
+	text-align: center;
+	padding: 3.75rem;
+}
+
+.app-features{
+	color: #8a8a8a;
+	margin-bottom: 2rem;
+}
+
+.app-info{
+	font-family: 'HelveticaNeue-Thin';
+	font-size: 1.125rem;
+	line-height: 1.25rem;
+}
+
+.col-4-app{
+	width: 33.33%;
+	float: left;
+	padding: 3.125rem 2.8125rem;
+}
+
+.row{
+	overflow: hidden;
+}
+
+.col-4-app h3{
+	color: black;
+	font-weight: 700;
+	font-size: 1.375rem;
+	padding: 2.2rem 0rem;
+}
+
+.col-4-app p{
+	font-family: 'HelveticaNeue-Thin';
+	font-size: 1.125rem;
+	color: #646464;
+}
+
+#nose{
+	background: url('../img/nose-bg.png');
+	background-size: cover;
+	background-position: center; 
+}
+
+#nose .container{
+	padding-left: 0;
+	margin-left: 17.5rem;
+}
+
+.download-info{
+	width: 50%;
+	padding: 12rem 0rem 10.75rem 0rem;
+}
+
+.download-header{
+	margin-bottom: 3.875rem;
+	color: white;
+}
+
+.download-para{
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	font-family: 'HelveticaNeue-Thin';
+	color: #646464;
+	padding-bottom: 1.9rem;
+}
+
+.download-button{
+	padding: 1.3rem;
+	border-radius: 3.125rem;
+	background-color: #d9332d;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-size: .8rem;
+	transition: 0.5s;
+}
+
+.download-button:hover{
+	background: #dc4d48;
+	transition: 0.3s;
+}
+
+.download-header-orange{
+	color: #f55150;
+}
+
+/*Footer Styles*/
+
+footer{
+	background: #2e2e38;
+}
+
+footer .container{
+	padding: 7.5rem 1.25rem;
+}
+
+footer .col-4-app{
+	padding:0;
+	padding-right: 2rem;
+	margin-top: 3.75rem;
+}
+
+footer h4{
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: white;
+	padding-bottom: 1.625rem;
+}
+
+footer li{
+	font-size: .9375rem;
+	line-height: 1.3rem;
+	color: white;	
+	margin-bottom: 26px;
+}
+
+
+.reddish-bg{
+	background: url('../img/rect-orange.png');
+	background-repeat: no-repeat;
+}
+
+.ul-posts li{
+	padding-left: 4.5rem;
+}
+
+#about-para{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.block{
+	display: block;
+}
+
+.small-text{
+	font-size: 0.6875rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*COPYRIGHT*/
+
+#copyright{
+	background: #d7dedc;
+}
+
+#copyright .container{
+	text-align: center;
+}
+
+#copyright .container{
+	vertical-align: middle;	
+}
+
+.inline{
+	display: inline-block;
+	font-size: .9rem;
+	/*font-family: 'HelveticaNeue-Thin';*/		
+}
+
+.images{
+	vertical-align: middle;
+}
+
+.cr, 
+.site{
+	margin-right: 2.3rem;
+}
+
+.fb,
+.dribble{
+	margin-right: 2.5rem;
+}
+
+.cr:after, 
+.site:after{
+	content: "";
+	border: 1px solid #555;
+	margin-left: 2.3rem;
+}
+
+/*iPhone Animation*/
+
+.iphone-off{
+	width: 85%;
+	position: relative;
+/*	left: -5rem;
+	top: -6.2rem;*/
+	/*top: 0;*/
+/*	left: 5px;*/
+	margin-bottom: -15rem;	
+	z-index: 997;
+}
+
+.iphone-scn{
+	position: absolute;	
+	right: 9.85rem;
+	top: 5.1rem;
+	width: 60%;
+	z-index: 998;
+}
+
+.iphone-btn{
+	position: absolute;
+	right: 11.4375rem;
+	/*bottom: 10rem;*/
+	top: -1.4em;
+	/*top: -1.19rem;*/
+	z-index: 999;
+}
+
+.js-wp-2{
+	opacity: 0;
+}
+
+.js-wp-2.animated{
+	opacity: 1;
+}
+
+.js-wp-3{
+	opacity: 0;
+}
+
+.js-wp-3.animated{
+	opacity: 1;
+	animation-delay: 2.1s;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1322px){
+	#nose .container{
+		margin-left: 5rem;
+	}
+
+	body{
+		overflow-x: hidden;
+	}
+}
+
+@media only screen and (max-width : 1012px) {
+	
+	.download-info{
+		width: 70%;
+	}
+
+	.imgs{
+		right: -10rem;
+	}	
+
+	.cta{
+		margin-top: 3rem;
+	}
+
+	.cta-info{
+		padding-right: 5rem;
+	}
+
+	#hero .container{
+		max-height: 80%;
+	}
+}
+
+@media only screen and (max-width : 828px) {
+	.iphone-off,
+	.iphone-btn,
+	.iphone-scn{
+		display: none;
+	}
+
+	.cta-info{
+		width: 100%;
+		text-align: center;
+		padding-right: 0rem;
+	}
+
+	.download-info{
+		width: 100vh;
+	}
+	
+	.col-4-app{
+		width: 100%;
+	}
+
+}
+
+
